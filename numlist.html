@@ -1,0 +1,30 @@
+<html>
+<head></head>
+<body>
+  <input type="text" id="people">
+    <button onclick="count()">add person</button>
+    <h1 id="placeHolder"></h1>
+    <h2 id="names"></h2>
+    
+  <script>
+  var total=0;
+  var username=[];
+  var colors=["red","green","blue","yellow"];//
+    function count(){
+      var a=document.getElementById('people').value;
+      document.getElementById('people').value="";
+      total++;
+      document.getElementById('placeHolder').innerHTML=total;
+      username.unshift(a);
+      document.getElementById('names').innerHTML=username;
+      var color=Math.floor(Math.random()*username.length);
+      document.getElementById('names').style.color.=randColor;
+      for (var i=0;<username.length i++){
+      for rand=Math.floor(Math.random()*username.length);
+        /*document.body.style.color=colors[rand];
+        document.getElementById('names'); */
+      }
+    }
+  </script>
+</body>
+</html>
